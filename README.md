@@ -578,4 +578,4 @@ Hola a todos
 
 ---
 
-**¡Disfruta del chat! 💬**# DiscordLocalServer
+**¡Disfruta del chat! 💬**
