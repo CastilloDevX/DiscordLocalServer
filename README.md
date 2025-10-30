@@ -429,29 +429,6 @@ java Client Pedro 192.168.1.100 8080
   - Envío de mensajes
   - Gestión de desconexiones
 
-### Flujo de Comunicación
-
-```
-┌─────────────┐                  ┌─────────────┐                  ┌─────────────┐
-│  Cliente A  │                  │   Servidor  │                  │  Cliente B  │
-└──────┬──────┘                  └──────┬──────┘                  └──────┬──────┘
-       │                                │                                │
-       │──── Socket TCP (8080) ────────>│                                │
-       │                                │                                │
-       │<─── "Ingresa nombre" ──────────│                                │
-       │                                │                                │
-       │──── "Juan" ───────────────────>│                                │
-       │                                │──── "Juan se unió" ──────────>│
-       │<─── Confirmación ──────────────│                                │
-       │                                │                                │
-       │──── "Hola a todos" ───────────>│                                │
-       │                                │──── "[Juan]: Hola" ──────────>│
-       │                                │                                │
-       │──── "/msg Maria Hola" ────────>│                                │
-       │                                │──── "[Private][Juan]" ────────>│
-       │                                │                                │
-```
-
 ### Diagrama de Clases (Simplificado)
 
 ```
